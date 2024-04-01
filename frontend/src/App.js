@@ -194,7 +194,10 @@ function App() {
                       coloring that I was unable to figure out was how to have the color scale for each decision 
                       maker change per round and have the legend change accordingly. This means when there are only
                       1 total bomb possible, only having 2 colors (0 or 1 bomb). I would have also liked to 
-                      have the numeric scale for what each color represents in the legend. 
+                      have the numeric scale for what each color represents in the legend. The other part I didn't 
+                      figure out was highlighting every single path. Since the paths are stacked on top of each other, 
+                      if a path is completely below others (even the empty space) it won't be able to be highlighted. 
+                      I have not been able to figure out how to fix this problem.
                     </p>
                   </div>
               </div>
