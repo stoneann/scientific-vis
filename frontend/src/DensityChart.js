@@ -2,6 +2,7 @@ import * as d3 from "d3"; // we will need d3.js
 import { useMemo, useState } from 'react';
 import { Legend } from "./Legend";
 import './App.css';
+import { AxisBottom } from "./AxisBottom";
 
 const MARGIN = { top: 30, right: 30, bottom: 40, left: 50 };
 
@@ -38,8 +39,8 @@ export const Density = ({ width, height, data, round }) => {
     .range(COLORS);
 
   const xScale = useMemo(() => {
-    const max = 0;
-    const min = 100;
+    const max = 100;
+    const min = 0;
     const range = max - min;
     return d3
       .scaleLinear()
@@ -108,13 +109,13 @@ export const Density = ({ width, height, data, round }) => {
     <div className="graph">
       <div className="legend">
         <Legend
-          title='Human'
+          title='Human Number of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[0])} />
         <Legend
-          title='ChatGPT-4'
+          title='ChatGPT-4 Number of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[1])} />
         <Legend
-          title='ChatGPt-3'
+          title='ChatGPt-3 Number of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[2])} />
       </div>
       <svg width={width} height={height}>
@@ -124,9 +125,12 @@ export const Density = ({ width, height, data, round }) => {
           transform={`translate(${[MARGIN.left, MARGIN.top]})`}
         >
           {allShapes}
+          <g transform={`translate(0, ${boundsHeight})`}>
+            <AxisBottom xScale={xScale} pixelsPerTick={40} />
+          </g>
         </g>
       </svg>
-      {selectedPath ? densityData[selectedPath].name : ""}
+      {/* {selectedPath ? densityData[selectedPath].name : ""} */}
     </div>
   );
 };
