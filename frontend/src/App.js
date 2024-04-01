@@ -62,7 +62,12 @@ function App() {
                           the distribution falls to lower numbers, meaning it starts opening less boxes. This is not seen
                           in the human and GhatGPT-4 bar. This fits into the context of the paper because the paper is
                           discussing if AI can actually adopt human like characteristics. This graph shows that as AI
-                          continues to grow and improve, it does act more like a human.</p>
+                          continues to grow and improve, it does act more like a human. I chose to redesign this visualization 
+                          because I felt like it didn't support its tasks efficiently enough. It used up a lot of space because 
+                          of the treee structure and the data was hard to compare between rounds and decision makers. This impacted 
+                          their support of the tasks because they depended on the somparison of values. For example, "how does the previous 
+                          rounds outcome impact the current round decisions?" could be answered by analyzing overall trends between distributions. 
+                          However, if the data were similar enough, then it would be hard to tell the impact one round has on another.</p>
                   </div>
               </div>
               <div className="App-section-header">
@@ -87,7 +92,9 @@ function App() {
                   <div className="App-section-body">
                       <p>My redesign process had 4 phases, which I will discuss in detail below.</p>
                       <h3>Redesign #1</h3>
-                      <img className="App-image" src={require('./scientific-vis-photos/IMG_0059.jpg')} alt='Step #1' />
+                      <div className="App-original-vis">
+                        <img className="App-image" src={require('./scientific-vis-photos/IMG_0059.jpg')} alt='Step #1' />
+                      </div>
                       <p>When I first tried redesigning the visualization, I wanted to make it easier to compare the bomb vs no bomb
                         distribution. At first,
                         I kept the bar chart because it felt like the best way to portray a distribution that has buckets. In order to 
@@ -105,7 +112,9 @@ function App() {
                         support. There is no easy way to compare humans and chatGPT because each graph is completely separate.
                       </p>
                       <h3>Redesign #2</h3>
+                      <div className="App-original-vis">
                       <img className="App-image" src={require('./scientific-vis-photos/IMG_0058.jpg')} alt='Step #2' />
+                      </div>
                       <p>My goal when starting this second redesign was to support more tasks, specifically "When does the ChatGPT 
                         population act similarly to the human population?". One way to allow for more comparisons was to have the 
                         decision makers share the same axis. I actually had the idea for the structure of this visualization when 
@@ -122,7 +131,9 @@ function App() {
                         make it easy to compare the distribution at specific intervals of the domain (aka the number of boxes).
                       </p>
                       <h3>Redesign #3</h3>
-                      <img className="App-image" src={require('./scientific-vis-photos/IMG_0057.jpg')} alt='Step #3' />
+                      <div className="App-original-vis">
+                      <img className="App-image" src={require('./scientific-vis-photos/IMG_0061.jpg')} alt='Step #3' />                      
+                      </div>
                       <p>Starting this visualization, I wanted to change the data encodings so that it would be easier to compare the 
                         distributions between bombs and no bombs as well as between human and chatgpt. One of the best ways to compare 
                         distributions is sharing the same x and y axis and having the data overlap. This is very hard with a bar chart, 
@@ -137,7 +148,9 @@ function App() {
                         distance between one point on a line and another to compare distributions.
                       </p>
                       <h3>Redesign #4</h3>
+                      <div className="App-original-vis">
                       <img className="App-image" src={require('./scientific-vis-photos/IMG_0061.jpg')} alt='Step #3' />
+                      </div>
                       <p>Going into the final visualization I sketched, I knew that I wanted to keep the line graph structure because 
                         it was the best at supporting task #2. I also knew that I needed to change the encodings. It was at this point 
                         where I came up with task #1 and decided that I wanted my visualization to support it. Encoding the specific 
@@ -168,7 +181,8 @@ function App() {
                     </div>
                 </div>
               </div>
-              <div className="App-section-header">
+          </div>
+          <div className="App-section-header">
                   <h2>Challenges</h2>
                   <div className="App-section-body">
                     <p>
@@ -230,7 +244,6 @@ function App() {
                     </p>
                   </div>
               </div>
-          </div>
       </div>
   );
 }
