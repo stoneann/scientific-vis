@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://stoneann.github.io/",
+  "homepage": "https://stoneann.github.io/scientific-vis/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
