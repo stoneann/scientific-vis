@@ -68,22 +68,18 @@ function App() {
               <div className="App-section-header">
                   <h2>Tasks</h2>
                   <div className="App-section-body">
-                    {/* TODO: maybe add that you tried to ask a bunch of different who what wheres */}
-                      <p>My redesign of the visualization is going to focus more on the distributions and how they change
+                      <p>When I originally started designing my visualization I set out to support the same domain tasks as the 
+                        original design. However, as I sketched I decided to change mine as follows. My redesign of the visualization 
+                        is going to focus more on the distributions and how they change
                       rather than the distribution at every single possible outcome. In order to do this, I am going to focus on
-                      the task: How does the number of bombs received impact the decision makers decision for a round? Instead
+                      the task: How does the number of bombs received impact the decision makers decision for a round? This will be referred to as task #1 this reflection. Instead
                       of focusing on each specific path of outcomes, which is exponential, a potentially better
                       metric to look at is how much negative impacts of risk were faced. It would tell us that when the risk
                       came true X% of the time, this is how the decision maker reacted. I would also like to focus on the task:
-                      When does the ChatGPT population act similarly to the human population? If ChatGPT acts like a human,
+                      When does the ChatGPT population act similarly to the human population? This will be referred to as task #2 in this reflection. If ChatGPT acts like a human,
                       there should be a degree of variance in their answers because not all humans have the same risk aversity.
                       Therefore, I want the visualization to allow for easy comparisons between distributions to see which
-                      most line up. 
-                      {/* take this out? */}
-                      Finally, I want to focus on the task: How does the number of rounds impact the decision
-                      makers risk aversity? Not only should my graph be able to display data for rounds 1-3, but it should
-                      also be scalable so that if we obtained data for more rounds, it wouldn't impact the usability
-                      and readability of the visualization</p>
+                      most line up. </p>
                   </div>
               </div>
               <div className="App-section-header">
