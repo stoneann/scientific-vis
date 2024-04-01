@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/scientific-vis/app/static/css/main.973d7791.css",
-    "main.js": "/scientific-vis/app/static/js/main.35030ec2.js",
-    "static/js/453.8ab44547.chunk.js": "/scientific-vis/app/static/js/453.8ab44547.chunk.js",
-    "static/media/Scientific_Vis_Original.png": "/scientific-vis/app/static/media/Scientific_Vis_Original.73b2ce40e3a87b6aed82.png",
-    "static/media/IMG_0061.jpg": "/scientific-vis/app/static/media/IMG_0061.81e83cd1778471afd2c4.jpg",
-    "static/media/IMG_0057.jpg": "/scientific-vis/app/static/media/IMG_0057.47361a45d27b664e5227.jpg",
-    "static/media/IMG_0059.jpg": "/scientific-vis/app/static/media/IMG_0059.b1a668068b5605d0ef97.jpg",
-    "static/media/IMG_0058.jpg": "/scientific-vis/app/static/media/IMG_0058.d61f962877ee3800a26f.jpg",
-    "index.html": "/scientific-vis/app/index.html",
-    "main.973d7791.css.map": "/scientific-vis/app/static/css/main.973d7791.css.map",
-    "main.35030ec2.js.map": "/scientific-vis/app/static/js/main.35030ec2.js.map",
-    "453.8ab44547.chunk.js.map": "/scientific-vis/app/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/static/css/main.973d7791.css",
+    "main.js": "/static/js/main.4a147326.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/Scientific_Vis_Original.png": "/static/media/Scientific_Vis_Original.73b2ce40e3a87b6aed82.png",
+    "static/media/IMG_0061.jpg": "/static/media/IMG_0061.81e83cd1778471afd2c4.jpg",
+    "static/media/IMG_0057.jpg": "/static/media/IMG_0057.47361a45d27b664e5227.jpg",
+    "static/media/IMG_0059.jpg": "/static/media/IMG_0059.b1a668068b5605d0ef97.jpg",
+    "static/media/IMG_0058.jpg": "/static/media/IMG_0058.d61f962877ee3800a26f.jpg",
+    "index.html": "/index.html",
+    "main.973d7791.css.map": "/static/css/main.973d7791.css.map",
+    "main.4a147326.js.map": "/static/js/main.4a147326.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.973d7791.css",
-    "static/js/main.35030ec2.js"
+    "static/js/main.4a147326.js"
   ]
 }
