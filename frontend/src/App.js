@@ -89,8 +89,7 @@ function App() {
                       <h3>Redesign #1</h3>
                       <img className="App-image" src={require('./scientific-vis-photos/IMG_0059.jpg')} alt='Step #1' />
                       <p>When I first tried redesigning the visualization, I wanted to make it easier to compare the bomb vs no bomb
-                        distribution. This would help better address the task "How does the number of bobms received impact the 
-                        decision makers decision for a round?" because it compares distributions per round per decision maker. At first,
+                        distribution. At first,
                         I kept the bar chart because it felt like the best way to portray a distribution that has buckets. In order to 
                         make the comparison easier then, I added the bar charts onto the same axis but mirroring each other. This would 
                         attempt to encode the difference in distribution using length, which is easy to estimate. A reader could see that 
@@ -155,9 +154,9 @@ function App() {
               <div className="App-section-header">
                   <h2>My Final Visualization</h2>
                   <div className="continer">
-                    <div className="dropdown">
-                      Select a Round:
-                      <select
+                    <div className="round-select">
+                      Select a Round: 
+                      <select className="dropdown"
                         onChange={(e) => setRound(e.target.value - 1)}
                         defaultValue={round}
                       >
@@ -165,7 +164,7 @@ function App() {
                       </select>
                     </div>
                     <div className="graph">
-                        <Density height={500} width={500} data={data[round]?data[round]:[]} />
+                        <Density height={300} width={700} data={data[round]?data[round]:[]} />
                     </div>
                 </div>
               </div>

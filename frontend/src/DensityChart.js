@@ -93,7 +93,8 @@ export const Density = ({ width, height, data }) => {
         key={i}
         d={path}
         fill="white"
-        opacity={(selectedPath == i ? 1 : 0.4)}
+        fillOpacity={0.0}
+        opacity={(selectedPath == i ? 1 : 0.8)}
         stroke={colorScale(group.name)[parseInt(group.num_bombs) + 1]}
         strokeWidth={selectedPath == i ? 4 : 2}
         strokeLinejoin="round"
@@ -107,13 +108,13 @@ export const Density = ({ width, height, data }) => {
     <div className="graph">
       <div className="legend">
         <Legend
-          title='Human Number of Bombs'
+          title='Human # of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[0])} />
         <Legend
-          title='ChatGPT-4 Number of Bombs'
+          title='ChatGPT-4 # of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[1])} />
         <Legend
-          title='ChatGPt-3 Number of Bombs'
+          title='ChatGPt-3 # of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[2])} />
       </div>
       <svg width={width} height={height}>

@@ -57,26 +57,29 @@
 .legend {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .graph {
   display: flex;
   flex-direction: row;
+  font-weight: normal !important ;
 }
 
 .continer {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
 }
 
-/* .dropdown {
-  display: flex;
-  flex-direction: column;
-  height: 2rem;
-  align-items: center;
-  margin: 1rem auto;
-  box-shadow: 3px 3px 0px grey;
-  padding: 1rem 2rem;
-  background-color: #61dafb;
-  font-size: 2rem;
-} */
+.dropdown {
+  margin: 5px;
+}
+
+.round-select {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
