@@ -60,12 +60,12 @@
   flex-direction: row;
 }
 
-.continer {
+/* .continer {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.dropdown {
+/* .dropdown {
   display: flex;
   flex-direction: column;
   height: 2rem;
@@ -75,4 +75,4 @@
   padding: 1rem 2rem;
   background-color: #61dafb;
   font-size: 2rem;
-}
+} */

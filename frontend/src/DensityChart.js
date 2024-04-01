@@ -23,7 +23,7 @@ function kernelEpanechnikov(k) {
   };
 }
 
-export function Density({width, height, data, round}) {
+export const Density = ({ width, height, data, round }) => {
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
   const [selectedPath, setSelectedPath] = useState(null);
@@ -90,7 +90,7 @@ export function Density({width, height, data, round}) {
     return (
       <path
         key={i}
-        d={path?path:undefined}
+        d={path}
         fill="white"
         opacity={(selectedPath == i ? 1 : 0.4)}
         stroke={colorScale(group.name)[parseInt(group.num_bombs) + 1]}
@@ -101,19 +101,21 @@ export function Density({width, height, data, round}) {
       />
     );
   });
-  // @ts-ignore
+
+  const roundTemp = round;
+
   return (
     <div className="graph">
       <div className="legend">
         <Legend
           title='Human'
-          colorScale={d3.scaleOrdinal().domain(d3.range(round).map(String)).range(COLORS[0])} />
+          colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[0])} />
         <Legend
           title='ChatGPT-4'
-          colorScale={d3.scaleOrdinal().domain(d3.range(round).map(String)).range(COLORS[1])} />
+          colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[1])} />
         <Legend
           title='ChatGPt-3'
-          colorScale={d3.scaleOrdinal().domain(d3.range(round)).range(COLORS[2])} />
+          colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[2])} />
       </div>
       <svg width={width} height={height}>
         <g
@@ -124,7 +126,7 @@ export function Density({width, height, data, round}) {
           {allShapes}
         </g>
       </svg>
-      {/* {selectedPath ? densityData[selectedPath].name : ""} */}
+      {selectedPath ? densityData[selectedPath].name : ""}
     </div>
   );
 };

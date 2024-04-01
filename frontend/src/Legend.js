@@ -11,7 +11,6 @@ export function Legend({title, colorScale}) {
     // Create a legend
     const legend = legendColor()
       .scale(colorScale)
-      //@ts-ignore
       .title(title)
       .shapeWidth(30) // Adjust as needed
       .shapeHeight(10) // Adjust as needed
