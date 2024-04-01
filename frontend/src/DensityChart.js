@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { Legend } from "./Legend";
 import './App.css';
 import { AxisBottom } from "./AxisBottom";
+import { Tooltip } from "./Tooltip";
 
 const MARGIN = { top: 30, right: 30, bottom: 40, left: 50 };
 
@@ -66,6 +67,7 @@ export const Density = ({ width, height, data }) => {
       return {
         name: group[0],
         num_bombs: g2[0],
+        prefix: g2[0].substring(1),
         density,
       };
     })
@@ -116,6 +118,7 @@ export const Density = ({ width, height, data }) => {
         <Legend
           title='ChatGPt-3 # of Bombs'
           colorScale={d3.scaleOrdinal().domain(d3.range(3)).range(COLORS[2])} />
+          {selectedPath ? <Tooltip prefix={densityData[selectedPath].prefix}/> : ""}
       </div>
       <svg width={width} height={height}>
         <g
