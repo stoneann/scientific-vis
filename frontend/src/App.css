@@ -25,6 +25,10 @@
   width: 650px;
 }
 
+.redesign-image {
+  width: 650px;
+}
+
 .App-original-vis {
   display: flex;
   flex-direction: column;
@@ -60,10 +64,10 @@
   flex-direction: row;
 }
 
-/* .continer {
+.continer {
   display: flex;
   flex-direction: column;
-} */
+}
 
 /* .dropdown {
   display: flex;

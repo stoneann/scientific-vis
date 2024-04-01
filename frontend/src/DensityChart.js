@@ -24,7 +24,7 @@ function kernelEpanechnikov(k) {
   };
 }
 
-export const Density = ({ width, height, data, round }) => {
+export const Density = ({ width, height, data }) => {
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
   const [selectedPath, setSelectedPath] = useState(null);
@@ -102,8 +102,6 @@ export const Density = ({ width, height, data, round }) => {
       />
     );
   });
-
-  const roundTemp = round;
 
   return (
     <div className="graph">
