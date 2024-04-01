@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode basename="scientific-vis/app">
+  <React.StrictMode basename="scientific-vis">
     <App />
   </React.StrictMode>
 );
